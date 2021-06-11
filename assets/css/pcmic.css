@@ -1,0 +1,59 @@
+.collapsible {
+    /*width:100%;*/
+    /*background-color: #eee;*/
+    cursor: pointer;
+    /*
+    background-color: inherit;
+    color: #0099cc;
+    font-style: italic;
+    border: none;
+    padding-left: 25px;
+    padding-right: 10px;
+    outline: none;
+    text-align: left;
+    */
+}
+
+.topic {
+    width:15%;
+}
+.speaker {
+    width:15%;
+}
+.institution {
+    width:15%;
+}
+.topic {
+    width:55%;
+}
+
+.title {
+    font-weight: bold;
+    padding-right: 10px;
+    /*padding-top: 10px;*/
+}
+.title:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    font-style: normal;
+    color: white;
+    float: right;
+    margin-left: 25px;
+}
+
+.active, .collapsible:hover {
+    /*background-color: #ccc;*/
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.abstract {
+    display: none;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-top: 5px;
+    background color: #f1f1f1;
+    width: 100%;
+}

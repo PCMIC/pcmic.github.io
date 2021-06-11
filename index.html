@@ -13,7 +13,8 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/pcmic.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -64,52 +65,77 @@
     <h3 class="text-center">Schedule</h3>
     <table class="table table-hover">
         <tr>
-            <th>Date</th>
-            <th>Topic</th>
-            <th>Speaker</th>
-            <th>Institution</th>
+            <th class="timeslot">Date</th>
+            <th class="topic">Topic</th>
+            <th class="speaker">Speaker</th>
+            <th class="institution">Institution</th>
         </tr>
         <tr>
-            <td>August l3, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td class="timeslot">August l3, 2021 1:00 PM - 2:00 PM EDT</td>
+            <td class="topic">TBA</td>
+            <td class="speaker">TBA</td>
+            <td class="institution">TBA</td>
         </tr>
         <tr>
-            <td>July 16, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td class="timeslot">July 16, 2021 1:00 PM - 2:00 PM EDT</td>
+            <td class="topic">TBA</td>
+            <td class="speaker">TBA</td>
+            <td class="institution">TBA</td>
         </tr>
         <tr>
-            <td>June 18, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>TBD</td>
-            <td>TBD</td>
-            <td>TBD</td>
+            <td class="timeslot">June 18, 2021 1:00 PM - 2:00 PM EDT</td>
+            <td class="collapsible topic">
+                <div class="title">Natural Language Processing for Clinical Excellence: The State of Practices, Opportunities, and Challenges</div>
+                <div class="abstract">
+                    Rapid growth in adoption of electronic health records (EHRs) has led to an unprecedented expansion in the availability of large longitudinal datasets. Large initiatives such as the Electronic Medical Records and Genomics (eMERGE) Network, the Patient-Centered Outcomes Research Network (PCORNet), and the Observational Health Data Science and Informatics (OHDSI) consortium, have been established and have reported successful applications of secondary use of EHRs in clinical research and practice. In these applications, natural language processing (NLP) technologies have played a crucial role as much of detailed patient information in EHRs is embedded in narrative clinical documents. Meanwhile, a number of clinical NLP systems, such as MedLEE, MetaMap/MetaMap Lite, cTAKES, MedTagger, and i2b2 have been developed and utilized to extract useful information from diverse types of clinical text, such as clinical notes, radiology reports, and pathology reports. This talk will walk through some successful applications of NLP techniques in the clinical domain with potential opportunities and challenges.
+                </div>
+            </td>
+            <td class="speaker"><a href="https://www.shrs.pitt.edu/people/yanshan-wang">Yanshan Wang, PhD</a></td>
+            <td class="institution">University of Pittsburgh</td>
         </tr>
         <tr>
-            <td>May 21, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>Language technologies for the experience of function and disability</td>
-            <td>Denis Newman-Griffis</td>
-            <td>University of Pittsburgh</td>
+            <td class="timeslot">May 21, 2021 1:00 PM - 2:00 PM EDT</td>
+            <td class="collapsible topic">
+                <div class="title">Language technologies for the experience of function and disability</div>
+                <div class="abstract">
+                    The experience of disability is nearly universal, whether through long-term disability, temporary disablement, or the experience of friends or family. However, disability and human functioning have largely been left out of advancements in medical data science. This proposal will advance natural language processing (NLP) technologies to target two key barriers to collecting and analyzing better information on function and disability: (1) the function gap in Electronic Health Records (EHRs) and (2) the exclusion of the patient’s voice from the EHR. The proposed K99/R00 project will accomplish three significant steps in addressing these barriers: (Aim 1) Developing and evaluating enriched NLP models for analyzing functional status information in inpatient notes; (Aim 2) Expanding NLP methods for analyzing functional limitations to outpatient records and daily living domains; and (Aim 3) Developing and evaluating NLP models to bridge patient and provider perspectives on the experience of disability.
+                </div>
+            </td>
+            <td class="speaker"><a href="https://www.dbmi.pitt.edu/node/54348">Denis Newman-Griffis, PhD</a></td>
+            <td class="institution">University of Pittsburgh</td>
         </tr>
         <tr>
             <td>April 16, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>Prediction and stratification of VTE risk in post-operative patients using Electronic Health Records</td>
-            <td>Smitha Edakalavan</td>
-            <td>University of Pittsburgh</td>
+            <td class="collapsible topic">
+                <div class="title">Prediction and stratification of VTE risk in post-operative patients using Electronic Health Records</div>
+                <div class="abstract">
+                     Postoperative venous thromboembolic events (VTE) are considered preventable causes of morbidity and mortality. These serious adverse events are responsible for 10% of hospital mortality and account for $1billion of hospital cost/year [cite]. Existing VTE risk scoring systems, which can require 30+ variables many of which are physician-dependent, can be cumbersome and difficult to translate to patient-specific clinical decision making. Recent efforts have been made to develop machine learning algorithms for VTE risk prediction and stratification in specialized surgeries, however no comparable effort has been made in the setting of general surgery. In this study, we aim to evaluate several machine learning models in their ability to generalize VTE prediction from specialized surgery to the broader umbrella of general surgery settings.  The goal of this study is to 1) predict the VTE risk for a surgical patient post-discharge within 30 days 2) Stratify the VTE risk of the patient into high and low risk categories. 3) Determine which variables are most strongly associated with postoperative VTE. We analyzed the structured EHR data from post-operative patients who presented at one of several hospitals in our multi-center system and used machine learning algorithms including Linear regression with L1/L2 regularization, random forest, and XGBoost to create predictive models to analyze the risk of VTE. XGBoost had the highest performance and was able to stratify the patients into high and low risk categories using the output probabilities. Our results show that machine learning models can predict and stratify the VTE risk score of post-operative patients with high accuracy, sensitivity and specificity in addition to identifying the most predictive risk factors of VTE. The risk score and the categories predicted by the model can assist the physician in understanding the risk of a patient developing VTE and help in creating a personalized VTE prophylaxis regimen and monitoring plan.
+                </div>
+            </td>
+            <td class="speaker"><a href="https://www.dbmi.pitt.edu/node/54229">Smitha Edakalavan</a></td>
+            <td class="institution">University of Pittsburgh</td>
         </tr>
         <tr>
             <td>April 2, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>One year later: A clinician reflects on the developing &quot;new normal&quot;</td>
-            <td>Deb Levy, MD, MPH</td>
-            <td>Mass General Brigham</td>
+            <td class="collapsible topic">
+                <div class="title">One year later: A clinician reflects on the developing &quot;new normal&quot;</div>
+                <div class="abstract">
+                    A &quot;new normal&quot; is emerging in medicine integrating caring for COVID-19 patients, which includes the inpatient post-acute (or inpatient rehabilitation) setting. Dr. Levy will take this opportunity to share reflections of some impacts on physician workflow and general factors affecting burnout, share accessible clinical resources for a rapidly evolving novel condition, and review several use-cases of telehealth applications.  What initially appeared to be short-term changes in workflow to accommodate enhanced respiratory precautions and a novel condition, are now persisting at the one-year mark. As the cycle of change continues to impress, collaboration and bridging of multidisciplinary teams can facilitate ongoing innovation.
+                </div>
+            </td>
+            <td class="speaker">Deb Levy, MD, MPH</td>
+            <td class="institution">Mass General Brigham</td>
         </tr>
         <tr>
             <td>March 19, 2021 1:00 PM - 2:00 PM EDT</td>
-            <td>Development and Implementation of a Health e-Librarian with Personalized Recommender (HELPeR)</td>
-            <td>Young Ji Lee, PhD</td>
-            <td>University of Pittsburgh</td>
+            <td class="collapsible topic">
+                <div class="title">Development and Implementation of a Health e-Librarian with Personalized Recommender (HELPeR)</div>
+                <div class="abstract">
+                    As patients increasingly play more active roles in their health care, the Internet has become a prominent source of health information to guide their decision-making and self-management activities. Despite the great potential of the Internet, many patients who sought health information on the web reported feeling overwhelmed by the vast amount of unfiltered information and unqualified to determine the quality, veracity, and relevance of the information. The overall goal of this proposal is to build and implement a “Health E-Librarian with Personalized Recommendations (HELPeR)” - a personalized information access system with a hybrid recommender engine that adapts to different aspects of the patient. This would be the first implementation of a patient-centered system that can serve as a virtual health librarian. The HELPeR recommender engine is innovative in its capacity to integrate three dimensions of an individual patient (i.e., information needs based on the user’s profile, the user’s unique expressed information interests, and the level of user’s disease-related knowledge) to direct patients to highly personalized sets of information, that are high quality, trustworthy, and appropriate for each patient’s knowledge level. We have selected ovarian cancer (OvCa) as our initial population as it represents a complex disease with multiple tumor types and a range of prognoses, requiring personalized treatments and supportive care needs that evolve over time. HELPeR will be housed on a standalone website linked to the online health community (OHC) of the National Ovarian Cancer Coalition, a national OvCa advocacy organization. In order to attain our goal of implementing HELPeR, the aims of this proposal are: (1) Define user needs, preferences, and expectations for personalized health information, (2) Develop and evaluate the HELPeR system that is able to adapt to three types of individual user characteristics across the disease trajectory evolving information needs, personal information preferences, and progressive cancer-related knowledge, and (3) Conduct a field trial with OvCa patients to determine the acceptability and value of HELPeR in a real-world setting. HELPeR can be easily adapted to filter information for other cancers and chronic conditions, making it highly transferable to any chronic disease where patients repeatedly seek online information to better manage their condition.
+                </div>
+            </td>
+            <td class="speaker"><a href="https://www.nursing.pitt.edu/person/young-ji-lee">Young Ji Lee, PhD, RN</a></td>
+            <td class="institution">University of Pittsburgh</td>
         </tr>
     </table>
   </div>
@@ -124,6 +150,7 @@
 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/pcmic.js"></script>
 
       
   </body>
